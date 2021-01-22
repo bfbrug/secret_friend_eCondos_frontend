@@ -1,0 +1,57 @@
+{
+  "workbench.colorTheme": "Dracula",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 24,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.tabSize": 2,
+  "editor.renderLineHighlight": "gutter",
+  "terminal.integrated.fontSize": 14,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascritpreact"
+  },
+
+  "editor.formatOnSave": false,
+  "editor.parameterHints.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "breadcrumbs.enabled": true,
+  "javascript.suggest.autoImports":false,
+
+  "eslint.packageManager": "yarn",
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+
+  "files.associations": {
+    ".sequelizerc": "javascritp"
+  },
+
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 0,
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": false,
+  "[plaintext]": {}
+}
