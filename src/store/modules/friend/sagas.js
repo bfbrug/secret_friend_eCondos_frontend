@@ -5,9 +5,9 @@ import api from '../../../services/api';
 
 import { addFailure } from './actions';
 
-export function* add(payload) {
+export function* addFriend(payload) {
   try {
-    const { name, email } = payload;
+    const { name, email } = payload.payload;
 
     yield call(api.post, 'friends', {
       name,
@@ -22,4 +22,4 @@ export function* add(payload) {
   }
 }
 
-export default all([takeLatest('@friend/ADD_REQUEST', add)]);
+export default all([takeLatest('@friend/ADD_REQUEST', addFriend)]);

@@ -1,4 +1,5 @@
 export function addRequest(name, email) {
+  // alert(email);
   return {
     type: '@friend/ADD_REQUEST',
     payload: { name, email },

@@ -20,6 +20,7 @@ export default function Main() {
 
   function handleSubmit({ name, email }) {
     dispatch(addRequest(name, email));
+    // alert(name, email);
   }
   return (
     <>

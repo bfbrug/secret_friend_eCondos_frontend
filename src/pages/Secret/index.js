@@ -9,9 +9,9 @@ export default function Friend() {
 
   useEffect(() => {
     async function loadFriends() {
+      await api.put('secrets');
       const response = await api.get('friends');
 
-      // alert(response.request);
       setFriend(response.data);
     }
 
@@ -32,10 +32,13 @@ export default function Friend() {
                 <span>
                   <strong>E-mail: </strong> {f.email}
                 </span>
+                <span>
+                  <strong>Amigo Secreto: </strong> {f.secret_name}
+                </span>
               </li>
             ))}
           </List>
-          <Link to="/secret">Gerar amigos secretos e enviar e-mails</Link>
+          <Link to="/">Cadastrar amigos</Link>
         </Content>
       </Wrapper>
     </>
